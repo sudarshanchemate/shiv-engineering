@@ -21,16 +21,18 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# CSS/JS are not fingerprinted, so keep the window short (1 hour).
+# CSS/JS are not fingerprinted, and main.js injects the contact details at
+# runtime — a stale copy would overwrite correct HTML with old values.
+# Both files are small and served with an ETag, so revalidation costs a 304.
 [[headers]]
   for = "/css/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/js/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/assets/*"
