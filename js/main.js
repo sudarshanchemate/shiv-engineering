@@ -8,22 +8,21 @@
 const SITE = {
   // Phone number for the "Call Now" buttons.
   // Use full international format for `phoneDial` (no spaces, no brackets).
-  phoneDial: '+910000000000',
-  phoneDisplay: '+91 00000 00000',
+  phoneDial: '+918975373688',
+  phoneDisplay: '+91 89753 73688',
 
   // WhatsApp number in international format WITHOUT '+' or spaces.
-  // Example for India: '919876543210'
-  whatsappNumber: '910000000000',
-  whatsappDisplay: '+91 00000 00000',
+  whatsappNumber: '918975373688',
+  whatsappDisplay: '+91 89753 73688',
 
   // Pre-filled message when someone taps a WhatsApp button.
   whatsappMessage: 'Hello Shiv Engineering, I need assistance regarding my DG set. Please contact me.',
 
-  email: 'info@shivengineering.in',
+  email: 'sudarshanchemate414141@gmail.com',
   emailSubject: 'DG Set Enquiry — Shiv Engineering',
 
-  address: '[Your business address]',
-  serviceArea: '[Your service area / city / districts]'
+  address: 'Pune, Maharashtra',
+  serviceArea: 'Pune & Nagar, Maharashtra'
 };
 
 (function () {
