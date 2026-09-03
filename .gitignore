@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs & temp
+*.log
+*.tmp
+.cache/
+
+# Netlify local state
+.netlify/
+
+# Node (only if a toolchain is added later)
+node_modules/
